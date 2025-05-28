@@ -2,7 +2,8 @@ name: ${PROJECT_NAME:-postgres}
 
 volumes:
   postgres-data:
-    driver: local
+    name: ${VOLUME_NAME:-postgres-data}
+    external: true
 
 networks:
   app-net:
