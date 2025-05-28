@@ -94,11 +94,12 @@ Você pode usar qualquer cliente de banco de dados (DBeaver, DataGrip, pgAdmin, 
 - **Senha:** O valor de `POSTGRES_PASSWORD`
 - **Banco de Dados:** O valor de `POSTGRES_DB`
 
-## 🛣️ Roadmap (Próximos Passos)
+## 🛣️ Roadmap (Evoluções Focadas no PostgreSQL)
 
-Esta é a Versão 1 do nosso serviço. Os próximos passos para evoluí-lo para um ambiente de produção ainda mais robusto incluem:
+Esta é a Versão 1 do nosso serviço de nó único. Os próximos passos para evoluí-lo se concentram em aumentar a resiliência e a performance do próprio banco de dados, mantendo o foco exclusivo no serviço de Postgres.
 
-- [ ] **V1.1:** Implementar uma estratégia de **Backup e Restore** automatizados (ex: `pg_dump` via cron job para um S3).
-- [ ] **V1.2:** Adicionar **Monitoramento e Observabilidade** (ex: Prometheus + Grafana).
-- [ ] **V1.3:** Configurar **Logs Centralizados** (ex: ELK Stack ou Loki).
-- [ ] **V2.0:** Evoluir para uma arquitetura de **Alta Disponibilidade (HA)** com Patroni.
+- [ ] **V1.1: Backup e Restore Automatizados:** Implementar uma rotina confiável utilizando `pg_dump` para garantir a recuperabilidade dos dados em caso de desastre.
+
+- [ ] **V2.0: Alta Disponibilidade (HA) e Replicação:** Evoluir a arquitetura para um cluster com failover automático utilizando **Patroni**, eliminando o nó único como ponto de falha e garantindo a continuidade do serviço.
+
+- [ ] **V2.1: Otimização e Performance:** Análise de queries lentas (utilizando extensões como `pg_stat_statements`), criação de estratégias de indexação e tunning fino das configurações do `postgresql.conf` para cargas de trabalho específicas.
