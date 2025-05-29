@@ -1,0 +1,13 @@
+# Ignorar pastas do Git e do Node.js
+.git
+node_modules
+
+# Ignorar arquivos de configuração de IDEs
+.vscode
+.idea
+
+# Ignorar arquivos de ambiente locais
+.env
+
+# Ignorar arquivos de documentação que não precisam estar na imagem
+*.md
