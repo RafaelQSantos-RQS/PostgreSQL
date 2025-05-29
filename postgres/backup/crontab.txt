@@ -1,0 +1,2 @@
+# Roda o script de backup todo dia às 02:00 da manhã e salva a saída em um log.
+0 2 * * * /app/backup.sh >> /var/log/cron.log 2>&1
