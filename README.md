@@ -98,7 +98,7 @@ Você pode usar qualquer cliente de banco de dados (DBeaver, DataGrip, pgAdmin, 
 
 Esta é a Versão 1 do nosso serviço de nó único. Os próximos passos para evoluí-lo se concentram em aumentar a resiliência e a performance do próprio banco de dados, mantendo o foco exclusivo no serviço de Postgres.
 
-- [ ] **V1.1: Backup e Restore Automatizados:** Implementar uma rotina confiável utilizando `pg_dump` para garantir a recuperabilidade dos dados em caso de desastre.
+- [x] **V1.1: Backup e Restore Automatizados:** Implementar uma rotina confiável utilizando `pg_dump` para garantir a recuperabilidade dos dados em caso de desastre.
 
 - [ ] **V2.0: Alta Disponibilidade (HA) e Replicação:** Evoluir a arquitetura para um cluster com failover automático utilizando **Patroni**, eliminando o nó único como ponto de falha e garantindo a continuidade do serviço.
 
